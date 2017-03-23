@@ -38,18 +38,29 @@ Large dataset
 **Sample**
 
 **Input**
+
 5
+
 0
+
 1
+
 2
+
 11
+
 1692
 
 **Output**
+
 Case #1: INSOMNIA
+
 Case #2: 10
+
 Case #3: 90
+
 Case #4: 110
+
 Case #5: 5076
 
 In Case #1, since 2 × 0 = 0, 3 × 0 = 0, and so on, Bleatrix will never see any digit other than 0, and so she will

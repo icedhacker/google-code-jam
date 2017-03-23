@@ -4,14 +4,18 @@ import java.io.*;
 import java.util.*;
 
 public class CountingSheep {
-    static final String FILENAME = "C:\\Users\\sanath\\Downloads\\codejam\\2016\\qualifications\\counting-sheep-large";
+    Scanner in = new Scanner(getClass().getResourceAsStream(INPUT_FILE_NAME));
+
+    static final String FILENAME = "counting-sheep-small";
     static final String INPUT_FILE_NAME = FILENAME + ".in";
     static final String OUTPUT_FILE_NAME = FILENAME + ".out";
 
     public static void main(String args[]) throws Exception {
-        Scanner in = new Scanner(new BufferedReader(new FileReader(INPUT_FILE_NAME)));
-        PrintStream out = new PrintStream(new FileOutputStream(OUTPUT_FILE_NAME));
+        new CountingSheep().run();
+    }
 
+    private void run() throws Exception {
+        PrintStream out = new PrintStream(new FileOutputStream(OUTPUT_FILE_NAME));
         int T = in.nextInt();
         for (int i = 0; i < T; i++) {
             int N = in.nextInt();
@@ -19,6 +23,7 @@ public class CountingSheep {
             out.println(s);
             System.out.println(s);
         }
+        in.close();
         out.close();
     }
 
